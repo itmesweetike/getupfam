@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Standup Signup </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
+	<hr>
+	<div class="container">
+  <form action="submit2.php" method="POST">
+  	<fieldset>
+    <div class="form-group row">
+      <label for="firstname" class="col-sm-2 col-form-label">Who Are You?</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="firstname" placeholder="Name">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="Apikey" class="col-sm-2 col-form-label">HipChat Apikey</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" name="Apikey" placeholder="Apikey">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="Whenareyouoff" class="col-sm-2 col-form-label">What Time are you off?</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="Whenareyouoff" placeholder="2pm, 3pm, 4pm, etc.">
+      </div>
+    </div>
+    <fieldset class="form-group row">
+      <legend class="col-form-legend col-sm-2">What Shift Do You Work?</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Schedule" id="Schedule" value="Daytime">
+            Daytime
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Schedule" id="Schedule" value="ONCA">
+            ONC A
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="Schedule" id="Schedule" value="ONCB">
+            ONC B
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group row">
+      <div class="offset-sm-2 col-sm-10">
+        <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+        <input type="reset" name="Reset" class="btn btn-warning">
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
